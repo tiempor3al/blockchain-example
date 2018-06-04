@@ -1,0 +1,10 @@
+/**
+ * New query file
+ */
+
+query selectInscripciones {
+  description: "Selecciona todas las inscripciones"
+  statement:
+    SELECT org.example.mynetwork.Inscripcion
+  	WHERE (alumno == _$alumno AND asignatura == _$asignatura)
+}
